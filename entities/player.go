@@ -1,14 +1,11 @@
 package entities
 
-type Player struct {
-	Position Vec2
-	Velocity Vec2
-	Char     rune
-}
+import "github.com/kiing-dom/megamath/common"
 
-type Vec2 struct {
-	X int
-	Y int
+type Player struct {
+	Position common.Vec2
+	Velocity common.Vec2
+	Char     rune
 }
 
 func (p *Player) MoveUp() {
